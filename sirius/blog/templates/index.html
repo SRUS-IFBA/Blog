@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% block title %}Blog- Equipe SRUS {% endblock %}
+
+{% block posts %}
+    {% for post in object_list %}
+
+        <div class="post-preview">
+            <a href="post.html">
+                <h2 class="post-title">
+                    {{ post.titulo }}
+                </h2>
+            </a>
+                <h3 class="post-meta">
+                    {{ post.texto|slice:":150"}}
+                </h3>
+            <p class="post-meta">Postado em {{ post.categoria.nome }}, criado em {{ post.criado }}</p>
+        </div>
+        <hr>
+
+    {% endfor %}
+{% endblock %}
