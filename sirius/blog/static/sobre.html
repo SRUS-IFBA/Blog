@@ -1,21 +1,18 @@
-{%if not page_obj.has_previous %}{{page_obj.previous_page_number}}{%  endif  %}
-<html>
-
 <head>
 
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Blog - Post</title>
+    <title>Blog - Sobre</title>
 
     <!-- Bootstrap Core CSS -->
-    <link href="../static/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link href="../static/css/clean-blog.min.css" rel="stylesheet">
+    <link href="css/clean-blog.min.css" rel="stylesheet">
 
-    <!-- Custom Fonts -->
+    <!-- Custom Fonts (icone GitHub)-->
     <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 </head>
 
@@ -35,18 +32,12 @@
             </div>
             <!-- / -->
 
-             <!-- Esconde o menu/ habilita botao-->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" >
+            <!-- Esconde o menu/ habilita botao-->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <!-- Menu (topo) -->
                 <ul class="nav navbar-nav navbar-right">
                     <li>
                         <a href="/">Home</a>
-                    </li>
-                    <li>
-                        <a href="../static/contact.html">Sobre</a>
-                    </li>
-                    <li>
-                        <a href="../static/contact.html">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -54,13 +45,14 @@
     </nav>
 
     <!-- Layout da parte superior -->
-    <header class="intro-header" style="background-image: url('../static/img/home-bg.jpg')">
+    <header class="intro-header" style="background-image: url('img/about-bg.jpg')">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                    <div class="post-heading">
-                        <h1><center>{{ object.titulo }}</center></h1>
-                        <span class="meta"><center>Postado em {{ object.categoria.nome }}, criado em {{ object.criado }}</center></span>
+                    <div class="page-heading">
+                        <h1>SIRIUS</h1>
+                        <hr class="small">
+                        <span class="subheading">Quem somos</span>
                     </div>
                 </div>
             </div>
@@ -68,16 +60,24 @@
     </header>
 
     <!-- Conteudo -->
-    <article>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                    <h1>{{ object.titulo }}</h1>
-                    <p align="justify">{{ object.texto }}</p>
-                </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <p>SIRIUS é uma equipe composta por 7 alunos, que cursam Sistemas de Infomração no IFBA - Vitória da Conquista/BA.  Os projetos são desenvolvidos para a disciplina Engenharia de Software,  e solicitados pelo professor Crescêncio Lima. Esses projetos são implementados em Python, utilizando o framework Django com o objetivo de aplicar e aprender as técnicas vistas em sala.</p>
+                <p>Os componentes da equipe são:</p>
+                <ul>
+                    <li>Abner Carvalho   - <a> </a></li>
+                    <li>Cleiton Amorin   - <a href="https://github.com/amorimcltn" target="_blank">amorinclnt</a></li>
+                    <li>Filipe Freitas   - <a href="https://github.com/filipefs" target="_blank">filipefs</a></li>
+                    <li>Kauanna Vieira   - <a href="https://github.com/kauannavs" target="_blank">kauannavs</a></li>
+                    <li>Saionara Araújo  - <a href="https://github.com/SaionaraAraujo" target="_blank">SaionaraAraujo</a></li>
+                    <li>Socrátes Soares  - <a href="https://github.com/SocratesSoares" target="_blank">SocratesSoares</a></li>
+                    <li>Talita Mercês    - <a href="https://github.com/talitamerces" target="_blank">talitamerces</a></li>
+                </ul>
+
             </div>
         </div>
-    </article>
+    </div>
 
     <hr>
 
@@ -101,13 +101,13 @@
     </footer>
 
     <!-- jQuery -->
-    <script src="../static/js/jquery.js"></script>
+    <script src="js/jquery.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
-    <script src="../static/js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
 
     <!-- Custom Theme JavaScript -->
-    <script src="../static/js/clean-blog.min.js"></script>
+    <script src="js/clean-blog.min.js"></script>
 
 </body>
 
